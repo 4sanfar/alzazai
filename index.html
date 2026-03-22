@@ -3,19 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>الزعزعي تكنولوجي | المركز الأول لآلات عد وفحص النقود وصيانتها في اليمن</title>
+  <title>الزعزعي تكنولوجي | آلات عد وفحص النقود وكشف التزوير في اليمن</title>
 
-  <meta name="description" content="الزعزعي تكنولوجي بصنعاء: متخصصون في بيع وصيانة آلات عد النقود (عدادات الزلط) وكشف التزوير. نوفر قطع غيار أصلية، عدادات بنكية، وأنظمة فحص العملات بدقة هندسية عالية.">
-  <meta name="keywords" content="عدادة نقود اليمن، صيانة عدادات زلط، كشف تزوير العملات، قطع غيار عدادات نقود صنعاء، عدادات بنكية كورية، فحص العملات المزيفة، مهندس عدادات نقود">
+  <meta name="description" content="الزعزعي تكنولوجي: متخصصون في بيع وصيانة آلات عد النقود وكشف التزوير. نوفر أفضل عدادات الزلط وقطع الغيار الأصلية مع ضمان هندسي في صنعاء.">
+  <meta name="keywords" content="عدادة نقود, عدادة زلط, كشف تزوير, صيانة عدادات, قطع غيار عدادات, عدادات بنكية, الزعزعي تكنولوجي, صنعاء, اليمن">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "الزعزعي تكنولوجي - Alzazai Tech",
+    "name": "الزعزعي تكنولوجي - لآلات النقد",
     "image": "https://alzazai-tech.vercel.app/applo.png",
-    "@id": "https://alzazai-tech.vercel.app",
-    "url": "https://alzazai-tech.vercel.app",
     "telephone": "+967772607581",
     "address": {
       "@type": "PostalAddress",
@@ -25,131 +23,186 @@
     },
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "5",
-      "reviewCount": "150"
-    },
-    "description": "نحن خبراء آلات عد النقود في اليمن، نقدم خدمات البيع والصيانة وقطع الغيار الأصلية لجميع الماركات العالمية."
+      "ratingValue": "4.9",
+      "reviewCount": "125",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
   }
   </script>
 
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
-    :root { --main-blue: #0b1a33; --main-orange: #f58220; --light-bg: #f8f9fc; }
     * {margin:0; padding:0; box-sizing:border-box; font-family:'Cairo',sans-serif;}
-    body {background: var(--light-bg); color:#222; line-height:1.6;}
+    body {background:#f5f6fa; color:#222; line-height:1.6; overflow-x:hidden;}
 
     header {
-      background: var(--main-blue); color:white; display:flex; justify-content:space-between; 
-      align-items:center; padding:10px 5%; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      background: linear-gradient(90deg, #0b1a33, #5fa0eb);
+      color:white; display:flex; justify-content:space-between; align-items:center;
+      padding:15px 40px; flex-wrap:wrap;
     }
-    header img {height:60px;}
-    .nav-links a {color:white; text-decoration:none; margin-right:20px; font-weight:700; transition: 0.3s;}
-    .nav-links a:hover {color: var(--main-orange);}
+    header img {height:70px;}
+    nav a {color:white; text-decoration:none; margin:0 12px; font-weight:600;}
 
     .hero {
       background: linear-gradient(rgba(11,26,51,0.85), rgba(11,26,51,0.85)), url('applo.png') center/cover;
-      color:white; text-align:center; padding:120px 20px;
+      color:white; text-align:center; padding:100px 20px;
     }
-    .hero h1 {font-size:45px; color: var(--main-orange); margin-bottom:15px; font-weight: 900;}
-    .hero p {font-size:22px; max-width:900px; margin:auto; font-weight: 600;}
+    .hero h1 {font-size:40px; color:#f58220; margin-bottom:10px;}
+    .hero p {font-size:18px; max-width:800px; margin:auto;}
 
-    .section-title {text-align:center; margin:60px 0 30px; font-size:32px; color: var(--main-blue); font-weight: 900;}
+    .categories {text-align:center; margin:40px auto 20px;}
+    .categories input {
+      padding:12px 20px; width:320px; border-radius:30px; border:2px solid #0b1a33;
+      margin-bottom:15px; text-align:center; outline:none; font-size:16px;
+    }
+    .categories button {
+      background:#0b1a33; color:white; border:none; padding:10px 25px;
+      border-radius:25px; margin:5px; cursor:pointer; font-weight:600; transition:0.3s;
+    }
+    .categories button.active, .categories button:hover {background:#f58220;}
 
     .product-grid {
-      display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-      gap:30px; max-width:1200px; margin:auto; padding:0 20px 60px;
+      display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px; max-width:1200px; margin:auto; padding:30px;
     }
     .product-card {
-      background:white; border-radius:20px; box-shadow:0 12px 30px rgba(0,0,0,0.1);
-      text-align:center; overflow:hidden; transition:0.4s; border-top: 6px solid var(--main-orange);
+      background:white; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.1);
+      text-align:center; overflow:hidden; transition:transform 0.3s; border-bottom: 4px solid #f58220;
     }
-    .product-card:hover {transform:translateY(-10px); box-shadow: 0 15px 40px rgba(0,0,0,0.15);}
-    .product-card img {width:100%; height:260px; object-fit:cover;}
-    .product-card h3 {margin:20px 0 10px; color: var(--main-blue); font-size: 24px;}
-    .product-card p {font-size:16px; color:#555; padding:0 20px 25px; text-align: justify; text-align-last: center;}
-    
-    .btn-contact {
-      background:#25D366; color:white; padding:14px 35px; border-radius:50px;
-      text-decoration:none; font-weight:700; display:inline-flex; align-items:center; 
-      gap:10px; margin-bottom:30px; font-size: 18px; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    .product-card:hover {transform:translateY(-10px);}
+    .product-card img {width:100%; height:230px; object-fit:cover;}
+    .product-card h3 {margin:15px 0 5px; color:#0b1a33; padding: 0 10px; font-weight: 700;}
+    .product-card p {font-size:15px; color:#555; padding:0 15px 20px; min-height:60px;}
+    .product-card a {
+      background:#25D366; color:white; padding:10px 25px; border-radius:30px;
+      text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:8px; margin-bottom:25px;
     }
 
-    /* قسم النص الإضافي لرفع SEO */
-    .seo-content {max-width: 1000px; margin: 40px auto; padding: 40px 20px; background: white; border-radius: 15px; text-align: right;}
-    .seo-content h2 {color: var(--main-blue); margin-bottom: 20px;}
-    .seo-content p {margin-bottom: 15px; color: #444;}
+    footer {
+      background:#0b1a33; color:white; text-align:center; padding:50px 20px; margin-top:40px;
+    }
+    footer a {color:#f58220; text-decoration:none; font-weight:bold;}
 
-    footer {background: var(--main-blue); color:white; text-align:center; padding:60px 20px;}
-    .footer-links a {color: var(--main-orange); text-decoration: none; margin: 0 15px; font-size: 18px; font-weight: bold;}
-
-    .floating-buttons { position:fixed; bottom:30px; left:30px; display:flex; flex-direction:column; gap:15px; z-index:2000; }
-    .float-btn { width:65px; height:65px; border-radius:50%; display:flex; justify-content:center; align-items:center; color:white; font-size:32px; box-shadow:0 8px 25px rgba(0,0,0,0.3); transition: 0.3s; }
-    .float-btn:hover {transform: scale(1.1) rotate(5deg);}
+    .floating-buttons {
+      position:fixed; bottom:25px; left:25px; display:flex; flex-direction:column; gap:15px; z-index:1000;
+    }
+    .floating-buttons a {
+      width:60px; height:60px; border-radius:50%; display:flex; justify-content:center; align-items:center;
+      color:white; font-size:30px; box-shadow:0 4px 15px rgba(0,0,0,0.3); transition:0.3s;
+    }
+    .floating-buttons a:hover {transform:scale(1.1);}
+    .whatsapp {background:#25D366;}
+    .call {background:#007bff;}
   </style>
 </head>
 
 <body>
 
 <header>
-  <img src="applo.png" alt="الزعزعي تكنولوجي">
-  <div class="nav-links">
+  <img src="applo.png" alt="شعار الزعزعي تكنولوجي">
+  <nav>
     <a href="#home">الرئيسية</a>
     <a href="#products">المنتجات</a>
-    <a href="#about">لماذا نحن؟</a>
-  </div>
+    <a href="#contact">تواصل معنا</a>
+  </nav>
 </header>
 
 <section class="hero" id="home">
-  <h1>خبراء عدادات النقود في اليمن</h1>
-  <p>حلول متكاملة لآلات عد وفحص العملات. نجمع بين أحدث التقنيات العالمية والخبرة الهندسية المحلية لنضمن أمان معاملاتكم المالية.</p>
+  <h1>الزعزعي تكنولوجي</h1>
+  <p>المركز المتخصص لبيع وصيانة آلات عد النقود وكشف التزوير في اليمن. دقة هندسية، قطع غيار أصلية، وضمان حقيقي.</p>
 </section>
 
-<div class="seo-content" id="about">
-  <h2>أفضل خدمات صيانة وبيع عدادات النقود بصنعاء</h2>
-  <p>في <strong>الزعزعي تكنولوجي</strong>، ندرك أهمية الدقة في العد. نحن نوفر أجهزة كشف التزوير المتطورة التي تدعم العملة المحلية (الريال اليمني) والعملات الأجنبية (الدولار والريال السعودي) بكفاءة عالية.</p>
-  <p>سواء كنت تبحث عن <strong>صيانة عدادات نقود</strong> أو ترغب في شراء <strong>أجهزة فحص عملات</strong> بضمان حقيقي، فإن فريقنا الهندسي يقدم لك الدعم الفني وقطع الغيار الأصلية في قلب صنعاء.</p>
+<div class="categories">
+  <input type="text" id="productSearch" placeholder="ابحث عن عدادة أو خدمة صيانة...">
+  <br>
+  <button class="active" onclick="filterSelection('all')">عرض الكل</button>
+  <button onclick="filterSelection('money')">آلات العد والفحص</button>
+  <button onclick="filterSelection('service')">الصيانة وقطع الغيار</button>
 </div>
 
-<h2 class="section-title" id="products">خدماتنا المتميزة</h2>
-
-<section class="product-grid">
-  <div class="product-card">
-    <img src="2.jpg" alt="بيع عدادات نقود بنكية احترافية اليمن">
-    <h3>بيع العدادات الاحترافية</h3>
-    <p>نوفر أحدث موديلات آلات العد اليابانية والكورية المخصصة للمهام الشاقة في البنوك ومحلات الصرافة، مع ميزات كشف التزوير بالأشعة فوق البنفسجية والمغناطيسية.</p>
-    <a href="https://wa.me/967772607581?text=استفسار عن شراء عدادة" class="btn-contact"><i class="fab fa-whatsapp"></i> سعر البيع المباشر</a>
+<section id="products" class="product-grid">
+  <div class="product-card money">
+    <img src="2.jpg" alt="عدادة نقود الفئة الاحترافية للمهام الشاقة">
+    <h3>عدادات الفئة البنكية (Heavy Duty)</h3>
+    <p>أجهزة عد يابانية وكورية فائقة الجودة، مخصصة للصرافين والبنوك مع كشف تزوير متطور بنسبة 100%.</p>
+    <a href="https://wa.me/967772607581?text=استفسار عن العدادات البنكية" target="_blank">
+      <i class="fab fa-whatsapp"></i> استفسار عن السعر
+    </a>
   </div>
 
-  <div class="product-card">
-    <img src="1.jpg" alt="مهندس صيانة عدادات نقود صنعاء">
-    <h3>مركز الصيانة الهندسي</h3>
-    <p>صيانة فورية لجميع أنواع عدادات الزلط (Dahua, Plus, Glory) وغيرها. نضمن لك معايرة دقيقة للحساسات وتنظيفاً شاملاً يطيل عمر الجهاز ويمنع أخطاء العد.</p>
-    <a href="https://wa.me/967772607581?text=طلب صيانة فورية" class="btn-contact"><i class="fab fa-whatsapp"></i> اطلب مهندس الآن</a>
+  <div class="product-card service">
+    <img src="1.jpg" alt="مهندس صيانة عدادات نقود وقطع غيار">
+    <h3>صيانة هندسية متخصصة</h3>
+    <p>صيانة فورية وتنظيف دوري لجميع أنواع العدادات بقطع غيار أصلية لضمان دقة العد وحماية جهازك.</p>
+    <a href="https://wa.me/967772607581?text=طلب خدمة صيانة هندسية" target="_blank">
+      <i class="fab fa-whatsapp"></i> طلب صيانة
+    </a>
   </div>
 
-  <div class="product-card">
-    <img src="5.jpg" alt="قطع غيار عدادات نقود أصلية صنعاء">
-    <h3>قطع الغيار الأصلية</h3>
-    <p>لا تتوقف عن العمل! نوفر سيور السحب، شاشات العرض الخارجية، حساسات الأشعة، ومحركات الدفع لجميع أنواع العدادات بضمان الجودة والأداء.</p>
-    <a href="https://wa.me/967772607581?text=استفسار عن قطع الغيار" class="btn-contact"><i class="fab fa-whatsapp"></i> توفر قطع الغيار</a>
+  <div class="product-card money">
+    <img src="4.jpg" alt="عدادة نقود ذكية للمحلات التجارية">
+    <h3>العدادات الذكية (Smart Series)</h3>
+    <p>الحل المثالي للمحلات التجارية والشركات، تمتاز بالسرعة وسهولة الاستخدام مع نظام فحص متكامل.</p>
+    <a href="https://wa.me/967772607581?text=طلب عدادة الفئة الذكية" target="_blank">
+      <i class="fab fa-whatsapp"></i> اطلب المنتج
+    </a>
+  </div>
+
+  <div class="product-card service">
+    <img src="5.jpg" alt="قطع غيار عدادات نقود أصلية">
+    <h3>قطع غيار وإكسسوارات</h3>
+    <p>توفير سيور، حساسات، وشاشات خارجية أصلية لجميع موديلات آلات عد وفحص النقود في السوق اليمني.</p>
+    <a href="https://wa.me/967772607581?text=استفسار عن قطع الغيار" target="_blank">
+      <i class="fab fa-whatsapp"></i> اطلب الآن
+    </a>
   </div>
 </section>
 
-<footer>
-  <p>📍 صنعاء - شارع صخر - مقابل جامع الحمّدي</p>
-  <div class="footer-links">
-    <a href="tel:+967772607581"><i class="fas fa-phone"></i> 772607581</a>
-    <a href="tel:+967777769379"><i class="fas fa-mobile-alt"></i> 777769379</a>
+<footer id="contact">
+  <div style="margin-bottom: 20px;">
+    <strong>الزعزعي تكنولوجي - خبراء تكنولوجيا النقد في اليمن</strong>
   </div>
-  <p style="margin-top: 30px; opacity: 0.6; font-size: 14px;">الزعزعي تكنولوجي © 2026 - رائدو حلول النقد والباركود في اليمن</p>
+  <p>📞 <a href="tel:01476085">01476085</a> – <a href="tel:+967772607581">772607581</a> – <a href="tel:+967777769379">777769379</a></p>
+  <p>📍 صنعاء – شارع صخر – مقابل جامع الحمّدي <br>
+    <a href="http://googleusercontent.com/maps.google.com/4" target="_blank">📍 عرض موقعنا على الخريطة</a>
+  </p>
+  <p>✉️ <a href="mailto:smart4mn@gmail.com">smart4mn@gmail.com</a></p>
+  <p style="margin-top:25px; font-size:12px; color:#ccc;">جميع الحقوق محفوظة لـ الزعزعي تكنولوجي © 2026</p>
 </footer>
 
 <div class="floating-buttons">
-  <a href="https://wa.me/967772607581" class="float-btn" style="background:#25D366;" target="_blank"><i class="fab fa-whatsapp"></i></a>
-  <a href="tel:+967772607581" class="float-btn" style="background:#007bff;"><i class="fas fa-phone-alt"></i></a>
+  <a href="https://wa.me/967772607581" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  <a href="tel:+967772607581" class="call"><i class="fas fa-phone-alt"></i></a>
 </div>
+
+<script>
+  function filterSelection(c) {
+    var x = document.getElementsByClassName("product-card");
+    if (c == "all") c = "";
+    for (var i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+      if (x[i].className.indexOf(c) > -1) x[i].style.display = "block";
+    }
+    var btns = document.getElementsByTagName("button");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].classList.remove("active");
+    }
+  }
+
+  document.getElementById('productSearch').addEventListener('input', function(e) {
+    var term = e.target.value.toLowerCase();
+    var x = document.getElementsByClassName("product-card");
+    for (var i = 0; i < x.length; i++) {
+      var title = x[i].getElementsByTagName("h3")[0].innerText.toLowerCase();
+      if (title.includes(term)) x[i].style.display = "block";
+      else x[i].style.display = "none";
+    }
+  });
+</script>
 
 </body>
 </html>
