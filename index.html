@@ -3,37 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>الزعزعي تكنولوجي | متخصص آلات عد النقود وفحص العملات وصيانتها في اليمن</title>
+  <title>الزعزعي تكنولوجي | آلات عد النقود وفحص العملات وصيانتها في اليمن</title>
 
-  <meta name="description" content="الزعزعي تكنولوجي: المركز الأول لبيع وصيانة آلات عد النقود، فحص العملات، وطابعات الباركود. نوفر قطع غيار أصلية وحلول هندسية متكاملة لضمان دقة العد وكشف التزوير في اليمن.">
-  
-  <meta name="keywords" content="آلات عد النقود, عدادة نقود, فاحصة عملات, صيانة عدادات, قطع غيار عدادات, مهندس آلات مصرفية, طابعة باركود, عدادة فلوس, عدادة زلط, آلات فحص عملات, قطع غيار في صنعاء, قطع غيار في عدن, المورد الزعزعي تكنولوجي, صيانة طابعات باركود, كشف التزوير">
-  
-  <meta name="author" content="الزعزعي تكنولوجي">
-  <link rel="canonical" href="https://alzazai-tech.vercel.app/">
+  <meta name="description" content="الزعزعي تكنولوجي: المركز الأول لبيع وصيانة آلات عد النقود وفحص العملات وطابعات الباركود. نوفر قطع غيار أصلية وحلول هندسية متكاملة في صنعاء وعدن.">
+  <meta name="keywords" content="آلات عد النقود, عدادة نقود, فاحصة عملات, صيانة عدادات, قطع غيار عدادات, مهندس آلات مصرفية, طابعة باركود, عدادة زلط, كشف التزوير">
 
-  <meta property="og:title" content="الزعزعي تكنولوجي | خبراء آلات عد وفحص النقود في اليمن">
-  <meta property="og:description" content="نوفر حلولاً هندسية وعدادات نقود فائقة الدقة لضمان أمان معاملاتكم المالية.">
-  <meta property="og:image" content="https://alzazai-tech.vercel.app/favicon.png">
-  <meta property="og:url" content="https://alzazai-tech.vercel.app/">
-  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "serviceType": "صيانة وبيع آلات عد النقود",
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "الزعزعي تكنولوجي - Alzazai Tech",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "شارع صخر - مقابل جامع الحمدي",
-        "addressLocality": "صنعاء",
-        "addressCountry": "YE"
-      },
-      "telephone": "+967772607581"
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box; font-family:'Cairo',sans-serif;}
+    body {background:#f5f6fa; color:#222; line-height:1.6;}
+
+    header {
+      background: linear-gradient(90deg, #0b1a33, #5fa0eb);
+      color:white; display:flex; justify-content:space-between; align-items:center;
+      padding:15px 40px; flex-wrap:wrap;
+    }
+    header img {height:70px;}
+    nav a {color:white; text-decoration:none; margin:0 12px; font-weight:600;}
+
+    .hero {
+      background: linear-gradient(rgba(11,26,51,0.8), rgba(11,26,51,0.8)), url('applo.png') center/cover;
+      color:white; text-align:center; padding:100px 20px;
+    }
+    .hero h1 {font-size:40px; color:#f58220; margin-bottom:10px;}
+    .hero p {font-size:20px; max-width:800px; margin:auto;}
+
+    .categories {text-align:center; margin:40px auto 20px;}
+    .categories input {
+      padding:12px 20px; width:300px; border-radius:25px; border:2px solid #0b1a33;
+      margin-bottom:15px; text-align:center; outline:none;
+    }
+    .categories button {
+      background:#0b1a33; color:white; border:none; padding:10px 22px;
+      border-radius:25px; margin:5px; cursor:pointer; font-weight:600;
+    }
+    .categories button.active {background:#f58220;}
+
+    .product-grid {
+      display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px; max-width:1200px; margin:auto; padding:20px;
+    }
+    .product-card {
+      background:white; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      text-align:center; overflow:hidden; transition:0.3s;
+    }
+    .product-card:hover {transform:translateY(-5px);}
+    .product-card img {width:100%; height:220px; object-fit:cover;}
+    .product-card h3 {margin:15px 0; color:#0b1a33;}
+    .product-card p {font-size:14px; color:#666; padding:0 15px 15px;}
+    .product-card a {
+      background:#25D366; color:white; padding:10px 20px; border-radius:25px;
+      text-decoration:none; font-weight:bold; display:inline-flex; align-items:center; gap:8px; margin-bottom:20px;
+    }
+
+    footer {
+      background:#0b1a33; color:white; text-align:center; padding:40px 20px; margin-top:40px;
+    }
+    footer a {color:#f58220; text-decoration:none;}
+
+    .floating-buttons {
+      position:fixed; bottom:25px; left:25px; display:flex; flex-direction:column; gap:10px; z-index:1000;
+    }
+    .floating-buttons a {
+      width:55px; height:55px; border-radius:50%; display:flex; justify-content:center; align-items:center;
+      color:white; font-size:25px; box-shadow:0 4px 10px rgba(0,0,0,0.3);
+    }
+    .whatsapp {background:#25D366;}
+    .call {background:#007bff;}
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="applo.png" alt="الزعزعي تكنولوجي">
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#products">المنتجات</a>
+    <a href="#contact">تواصل معنا</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h1>الزعزعي تكنولوجي</h1>
+  <p>حلول هندسية متكاملة لآلات عد وفحص النقود وأنظمة الباركود في اليمن.</p>
+</section>
+
+<div class="categories">
+  <input type="text" id="productSearch" placeholder="ابحث عن عدادة أو خدمة...">
+  <br>
+  <button class="active" onclick="filterSelection('all')">الكل</button>
+  <button onclick="filterSelection('money')">آلات العد</button>
+  <button onclick="filterSelection('service')">صيانة وقطع غيار</button>
+</div>
+
+<section id="products" class="product-grid">
+  <div class="product-card money">
+    <img src="2.jpg" alt="عدادة نقود الفئة الاحترافية">
+    <h3>عدادة الفئة الاحترافية</h3>
+    <p>آلة عد ذكية مخصصة للمهام الشاقة مع كشف تزوير متطور.</p>
+    <a href="https://wa.me/967772607581?text=استفسار عن عدادة الفئة الاحترافية" target="_blank">
+      <i class="fab fa-whatsapp"></i> استفسار
+    </a>
+  </div>
+
+  <div class="product-card service">
+    <img src="1.jpg" alt="صيانة عدادات نقود">
+    <h3>صيانة هندسية متخصصة</h3>
+    <p>نوفر قطع غيار أصلية وحلول صيانة فورية لجميع أنواع العدادات.</p>
+    <a href="https://wa.me/967772607581?text=طلب صيانة" target="_blank">
+      <i class="fab fa-whatsapp"></i> اطلب الخدمة
+    </a>
+  </div>
+
+  </section>
+
+<footer id="contact">
+  <p>📍 صنعاء – شارع صخر – مقابل جامع الحمّدي</p>
+  <p>📞 <a href="tel:01476085">01476085</a> – <a href="tel:+967772607581">772607581</a></p>
+  <p>✉️ <a href="mailto:smart4mn@gmail.com">smart4mn@gmail.com</a></p>
+  <p style="margin-top:15px; font-size:12px;">جميع الحقوق محفوظة لـ الزعزعي تكنولوجي © 2026</p>
+</footer>
+
+<div class="floating-buttons">
+  <a href="https://wa.me/967772607581" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  <a href="tel:+967772607581" class="call"><i class="fas fa-phone-alt"></i></a>
+</div>
+
+<script>
+  function filterSelection(c) {
+    var x = document.getElementsByClassName("product-card");
+    if (c == "all") c = "";
+    for (var i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+      if (x[i].className.indexOf(c) > -1) x[i].style.display = "block";
+    }
+  }
+</script>
+
+</body>
+</html>
     },
     "aggregateRating": {
       "@type": "AggregateRating",
