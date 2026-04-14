@@ -5,8 +5,8 @@
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://alzazai-tech.vercel.app/</loc>
-    <lastmod>2026-03-22</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-14</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 </urlset>
